@@ -7,8 +7,9 @@ export const Subtask = z.object({
 })
 
 export const Assignment = z.object({
-    id: z.number(),
+    _id: z.number(),
     name: z.string(),
+    due_date: z.string().datetime(),
     description: z.string(),
     subtasks: z.array(Subtask),
 });
