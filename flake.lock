@@ -1,5 +1,28 @@
 {
   "nodes": {
+    "defang": {
+      "inputs": {
+        "flake-utils": [
+          "flake-utils"
+        ],
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1726249820,
+        "narHash": "sha256-xb1ZOFndKKzk4TP+ruaCHsbSJ+HYaNfSjFSMbjswiZo=",
+        "owner": "DefangLabs",
+        "repo": "defang",
+        "rev": "27eea447787fc1cba2c0dfd515b3765b9f8838fe",
+        "type": "github"
+      },
+      "original": {
+        "owner": "DefangLabs",
+        "repo": "defang",
+        "type": "github"
+      }
+    },
     "flake-utils": {
       "inputs": {
         "systems": "systems"
@@ -35,6 +58,7 @@
     },
     "root": {
       "inputs": {
+        "defang": "defang",
         "flake-utils": "flake-utils",
         "nixpkgs": "nixpkgs"
       }
